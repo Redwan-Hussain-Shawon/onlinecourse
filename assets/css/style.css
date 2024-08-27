@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #81B234;
+    --secondary: #17A2B8;
+    --description: #606C80;
+    --black: #1f2937;
+    --light-bg: #f9f9fa;
+    --primary-bg: #f7ffea;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn,
+.btn-small {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn-small {
+    font-size: 0.9rem !important;
+    padding: 8px 13px !important;
+}
+
+.btn:hover,
+.btn-small:hover {
+    background-color: #76a32c;
+}
+.btn-50{
+    background-color: var(--primary-bg);
+    border-radius:4px;
+    height: 3rem;
+    line-height: 1.625rem;
+    padding: 12px 24px;
+    border:1px solid #99ec13;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.btn-50:hover{
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid transparent;
+}
+
+
+/* Login & Signup Section Start  */
+
+.modal{
+    width: 100%;
+    background-color: #a3f02781;
+    position: fixed;
+    z-index: 5000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+.modal.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal .modal_card{
+    background-color: white;
+    padding: 1.8rem 1.5rem;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width:400px ;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.6s;
+    transform-origin: top right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.modal.active .modal_card{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal #signup{
+    transform: scale(0);
+    pointer-events: none; 
+    transition: 0.4s;
+}
+.modal .modal_card.changeForm{
+  transform: translate(-50%, -50%) scale(1) !important;
+  pointer-events: auto !important;
+}
+.modal .modal_card .modal-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.4s;
+
+}
+.modal .modal-close:hover{
+    background-color: #ffe4ea;
+}
+.modal .modal_card .modal-close svg path{
+    transition: 0.5s;
+}
+.modal .modal_card .modal-close:hover svg path{
+    fill: #f86585;
+}
+.modal .modal_card h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-top: 15px;
+
+}
+.modal .modal_card .col-input{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
+}
+.modal .modal_card .col-input input{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 29px;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    color:#8b8d8f;
+    transform: 0.4s;
+    outline: none;
+}
+.modal .modal_card .col-input input::placeholder{
+    color: #8b8d8f;
+}
+.modal .modal_card .col-input input:focus{
+    border: 1px solid var(--primary);
+}
+.modal .modal_card .col-input p{
+    text-align: center;
+    color: var(--description);
+}
+
+/* Login & Signup Section End */
+
+/* Header Section Start  */
+
+header {
+    background-color: var(--light-bg);
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    z-index: 2001;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+header .left-side {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+header ul li {
+    position: relative;
+    color: var(--black);
+}
+
+header .left-side ul:not(.drop-down) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header ul li a {
+    padding: 0.65em 22px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header ul li a.login-signup {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+header ul li a.course-active {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+header ul li a.course-active:hover {
+    color: white;
+}
+
+header ul li a:hover {
+    color: var(--primary);
+}
+
+header ul li:hover .drop-down {
+    pointer-events: auto;
+    opacity: 1;
+    top: 48px;
+}
+
+header ul.drop-down {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 8px;
+    background-color: white;
+    top: 60px;
+    left: -10px;
+    transition: 0.4s;
+    pointer-events: none;
+    border-radius: 2px;
+    opacity: 0;
+    box-shadow: 0 20px 20px -7px rgba(69, 65, 78, 0.08);
+    z-index: 1000;
+}
+
+header ul.drop-down li {
+    width: 200px;
+    padding: 6px 0;
+}
+
+header form {
+    background-color: white;
+    height: 48px;
+    width: 300px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+}
+
+header form input {
+    border: none;
+    width: 100%;
+    outline: none;
+    color: var(--description);
+    font-weight: 500;
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 15px;
+    display: block;
+}
+
+header form input::placeholder {
+    color: var(--description);
+    font-weight: 500;
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 15px;
+}
+
+header form label img {
+    cursor: pointer;
+}
+
+header form #search-bar {
+    display: none;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.responsive-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 70px;
+    left: -5000px;
+    background-color: #000000b0;
+    transition: 0.4s;
+    z-index: 100;
+
+}
+
+/* Header Section End  */
+
+
+/* Hero Section Start  */
+
+.hero .banner {
+    background-size: 390px 400px !important;
+    min-height: 550px;
+    background-position: bottom right !important;
+    background-repeat: no-repeat !important;
+    padding: 90px 20px 70px;
+
+}
+
+.hero .banner .container h1 {
+    font-size: 55px;
+    line-height: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero .banner .container p {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    max-width: 650px;
+    color: var(--black);
+}
+
+
+
+
+/* Hero Section End*/
+
+/* All Courses Section Start */
+.all-courses {
+    background-color: var(--light-bg);
+    padding: 60px 0;
+}
+
+.all-courses h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.all-courses .container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.courses_header {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-width: none;
+    transition: 0.4s;
+    gap: 35px;
+}
+
+.courses_header button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--description);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--primary);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.courses_header button.active {
+    border-bottom: 3px solid var(--primary);
+    color: var(--black);
+}
+
+.courses_header button img {
+    width: 18px;
+    height: 18px;
+}
+
+.courses_header .previous,
+.courses_header .next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .11);
+    position: absolute;
+    color: var(--black);
+    cursor: pointer;
+
+}
+
+.courses_header .previous {
+    left: 0px;
+}
+
+.courses_header .next {
+    right: 0px;
+}
+
+.course_card_row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.course_card_row .card {
+    padding: 0 0 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    transition: 0.5s;
+}
+
+.course_card_row .card:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+}
+
+.course_card_row .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    max-height: 220px;
+}
+
+.course_card_row .card .mid {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 3px;
+}
+
+.course_card_row .card .mid span {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-bg);
+    padding: 4px 7px;
+    font-size: 12px;
+    gap: 5px;
+    border-radius: 4px;
+    color: var(--black);
+}
+
+.course_card_row .card h3 {
+    font-size: 19px;
+    color: var(--black);
+    font-weight: 600;
+    line-height: 26px;
+    margin: 12px 0 20px;
+    padding: 0 10px;
+}
+
+.course_card_row .card .bottom {
+    padding: 0 10px;
+}
+
+.all-courses .all_course_button a {
+    background-color: #f0ffda;
+    color: var(--black);
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.all-courses .all_course_button a:hover {
+    background-color: #dfffaf;
+}
+
+/* All Courses Section End */
+
+/* Practical Project Section Start  */
+
+.practical_project {
+    padding: 60px 0;
+}
+
+.practical_project .container {
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.practical_project .container .text {
+    width: 60%;
+    padding-top: 30px;
+}
+
+.practical_project .container .text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.practical_project .container .text p {
+    font-size: 17px;
+    color: var(--description);
+    line-height: 25px;
+
+}
+
+.practical_project .container .image {
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.practical_project .container .image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.6s;
+    max-height: 440px;
+    max-width: 600px;
+}
+
+.practical_project .container .image img:hover {
+    transform: scale(1.1);
+}
+
+/* Practical Project Section End */
+
+/* all data show section start */
+.all-data-show {
+    padding: 60px 0;
+}
+
+.all-data-show .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 0 20px;
+}
+.all-data-show .container .card{
+    min-width: 16.375rem;
+    height: 10rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #f2f2f3;
+    box-shadow: 0 4px 10px rgba(0,0,0,.02);
+}
+.all-data-show .container .card h3{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.875rem;
+    margin-bottom: 10px;
+}
+.all-data-show .container .card p{
+    font-size: 20px;
+    color: var(--description);
+}
+
+/* all data show section End */
+
+/* Top Highlighter Start */
+
+.top_highlighter{
+    padding: 50px 15px;
+    background-color: var(--primary-bg);
+    margin-bottom: 60px;
+}
+.top_highlighter h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.top_highlighter p{
+    font-size: 18px;
+    color: var(--description);
+    line-height: 27px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Top Highlighter End */
+
+/* Blog Section Start  */
+.blog{
+    background-color: var(--light-bg);
+    padding: 40px 10px;
+}
+
+.blog .row{
+    border-radius: 3px;
+    background-color: white;
+    padding:30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(285px,1fr));
+    gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+
+.blog .row .card .img img{
+    width:100%;
+    border-radius: 4px;
+}
+.blog .row .card .text h3{
+    margin: 0 0 5px ;
+}
+.blog .row .card .text h5{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--description);
+    font-weight: 500;
+    margin-top: 5px;
+}
+.blog .row .card .text h3 a{
+    font-size: 19px;
+    color: var(--black);
+    font-weight: 600;
+    line-height: 26px;
+    transition: 0.2s;
+}
+.blog .row .card:hover h3 a{
+    color: var(--primary);
+}
+.blog .row .card .text p{
+    font-size: 14px;
+    color: var(--description);
+}
+.blog .row .card .text p a{
+    color: var(--primary);
+    margin-left: 5px;
+}
+/* Blog Section End */
+
+/* Our Subscriptions Section Start  */
+.our-subscriptions{
+    padding: 60px 0;
+}
+.our-subscriptions .container{
+    padding: 0px 10px;
+}
+.our-subscriptions h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: var(--black);
+}
+.our-subscriptions .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.our-subscriptions .row .card{
+ 
+    padding: 50px 30px;
+    border: 1px solid #d9ddef;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+.popular_shape{
+    width:120px;
+    height: 35px;
+    background-color: var(--primary);
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popular_shape::before{
+    content: " ";
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    left:-24px;
+    top: -1px
+}
+.our-subscriptions .row .card h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black);
+    text-align: center;
+}
+.our-subscriptions .row .card h3{
+    font-size: 40px;
+    color: var(--primary);
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.our-subscriptions .row .card p{
+    font-size: 20px;
+    text-align: center;
+    color: var(--description);
+
+}
+.our-subscriptions .row .card a{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+.our-subscriptions .row .card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.our-subscriptions .row .card ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+/* Our Subscriptions Section End */
+.card_contact .row{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+   padding: 0px 10px 60px;
+   gap: 20px;
+   row-gap: 40px;
+
+}
+.card_contact .card{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.12);
+    transition: 0.3s;
+}
+.card_contact .card:hover{
+    transform: translateY(-20px);
+}
+.card_contact .card .icons{
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.card_contact .card h5{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card_contact .card p,
+.card_contact .card a{ 
+    color: var(--description);
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Contact Form Section Start  */
+
+.contact_form{
+    padding: 30px;
+    border-radius: 8px;
+}
+.contact_form .container{
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--light-bg);
+}
+.contact_form .card{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+.contact_form h2{
+    text-align: center;
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: -5px;
+}
+.contact_form p{
+    text-align: center;
+    color: var(--description);
+    font-size: 18px;
+}
+
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.contact_form form input,
+.contact_form form textarea{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: transparent;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    color: #8b8d8f;
+    transform: 0.4s;
+    outline: none;
+    transition: 0.3s;
+}
+.contact_form form textarea{
+    height: 120px;
+    resize: none;
+}
+.contact_form form input:focus,
+.contact_form form textarea:focus{
+    border-color: var(--primary);
+}
+
+
+/* Contact Form Section End */
+
+/* Footer Section Start  */
+
+footer {
+    background-color: var(--primary-bg);
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+footer .row .col h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+footer .row .col p {
+    max-width: 500px;
+    margin-left: 5px;
+}
+
+footer .row .col ul li a {
+    transition: 0.4s;
+    margin-left: 5px;
+}
+
+footer .row .col ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Section End */

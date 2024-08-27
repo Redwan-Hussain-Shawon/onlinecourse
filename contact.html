@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsvie.css">
+</head>
+
+<body>
+    <div class="website-wrapper">
+
+<!-- Login & Sign Up Start  -->
+
+<div class="login_signUp_modal modal ">
+    <div class="modal_card" id="login">
+        <div class="modal-close" onclick="loginSignupClose(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+            </svg>
+        </div>
+        <h4>Sign in</h4>
+        <!-- <p>Join a new world of knowledge</p> -->
+        <form class="col-input">
+            <input type="text" placeholder="Mobile" required>
+            <input type="text" placeholder="Password" required>
+            <a href=""></a>
+            <button class="btn" type="submit">Submit</button>
+            <p>Don't have an account? <a data-v-1745787d="" onclick="changeForm('login')" href="javascript:void(0);">Sign up</a></p>
+        </form>
+    </div>
+    <div class="modal_card" id="signup">
+            <div class="modal-close" onclick="loginSignupClose(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+                </svg>
+            </div>
+            <h4>Sign Up</h4>
+            <!-- <p>Join a new world of knowledge</p> -->
+            <form class="col-input">
+                <input type="text" placeholder="Mobile" required>
+                <a href=""></a>
+                <button class="btn" type="submit">Submit</button>
+                <p> have an account? <a data-v-1745787d=""  onclick="changeForm('signup')" href="javascript:void(0);">Sign In</a></p>
+            </form>
+
+    </div>
+</div>
+
+
+<!-- Login & Sign Up End -->
+
+
+        <!-- *Header Section Start  -->
+
+        <header>
+            <div class="container">
+                <div class="left-side">
+                    <div class="logo">
+                        <h3 style="color: #FD3434;">CreateofBrand</h3>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                        src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                                <ul class="drop-down">
+                                    <li><a href="course.html">Creativity and Design</a></li>
+                                    <li><a href="course.html">Foreign language</a></li>
+                                    <li><a href="course.html">Sales and Marketing</a></li>
+                                    <li><a href="course.html">Business</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="subscription.html">Subscription</a></li>
+                            <li><a href="javascript:void(0);" class="login-signup" onclick="loginSignup()">Login / Signup</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bar"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bar">
+                    </form>
+                    <div class="menu" id="menu">
+                        <img src="assets/icons/menu.png" alt="" style="width: 35px;height: 35px;">
+                    </div>
+                    <img src="assets/icons/x-icons.png" alt="" style='display:none;margin-right: 5px;'
+                        style="width: 35px;height: 35px;" id="menu-x">
+                </div>
+
+
+            </div>
+            <div class="responsive-menu">
+                <div style="width: 80%;background-color: white;height: 100%;">
+                    <ul>
+                        <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                    src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                            <ul class="drop-down" style="max-width:216px">
+                                <li style="width: 250px;"><a href="course.html">Creativity and Design</a></li>
+                                <li style="width: 250px;"><a href="course.html">Foreign language</a></li>
+                                <li style="width: 250px;"><a href="course.html">Sales and Marketing</a></li>
+                                <li style="width: 250px;"><a href="course.html">Business</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bars"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bars" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- *Header Section End  -->
+
+        <div class="top_highlighter">
+            <h1>Contact Us</h1>
+        </div>
+        <!-- Card Contact Section Start  -->
+        <div class="card_contact">
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <div class="icons">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                        <h5>Our Campus Operator</h5>
+                        <p>Call Us: <a href="tel:+01980533510">
+                                01980533510
+                            </a></p>
+                    </div>
+                    <div class="card">
+                        <div class="icons">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                        <h5>Our Address</h5>
+                        <p>387,414, Mukto Bangla Shopping Complex (3rd Floor), Mirpur-1, Dhaka-1216d</p>
+                    </div>
+                    <div class="card">
+                        <div class="icons">
+                            <img src="https://www.createofbrand.com/assets/icons/top-mail.png" alt="Mail"
+                                style="width: 35px;">
+                        </div>
+                        <h5>Email</h5>
+                        <p><a href="mailto:createofbrand@gmail.com"> createofbrand@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card Contact Section End  -->
+
+        <!-- Contact With Us From Section Start -->
+
+        <div class="contact_form">
+            <div class="container">
+            <div class="card">
+                <h2>Contact With Us</h2>
+                <p>Please send your email. We'll contact with you in Time</p>
+                <form action="" method="post">
+                    <input type="text" placeholder="enter your name" required>
+                    <input type="email" placeholder="enter your email" required>
+                    <input type="number" placeholder="enter your number" required>
+                    <textarea placeholder="enter your message" required></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <!-- Contact With Us From Section End -->
+
+        <!-- *Fotter Section Start  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Related to Polygamy</h3>
+                        <p>Bahubrihi is the best skill development solution in the country for students, professionals
+                            and
+                            freelancers of any age. Career track programs and foundation courses designed by industry
+                            experts at Bahubrihi will ensure your successful career at home and abroad.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Quick link</h3>
+                        <ul>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Login Signup</a></li>
+                            <li><a href="#">Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">01980-533510</a></li>
+                            <li><a href="#">createbrand.team@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Fotter Section End -->
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

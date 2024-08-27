@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsvie.css">
+</head>
+
+<body>
+    <div class="website-wrapper">
+
+<!-- Login & Sign Up Start  -->
+
+<div class="login_signUp_modal modal ">
+    <div class="modal_card" id="login">
+        <div class="modal-close" onclick="loginSignupClose(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+            </svg>
+        </div>
+        <h4>Sign in</h4>
+        <!-- <p>Join a new world of knowledge</p> -->
+        <form class="col-input">
+            <input type="text" placeholder="Mobile" required>
+            <input type="text" placeholder="Password" required>
+            <a href=""></a>
+            <button class="btn" type="submit">Submit</button>
+            <p>Don't have an account? <a data-v-1745787d="" onclick="changeForm('login')" href="javascript:void(0);">Sign up</a></p>
+        </form>
+    </div>
+    <div class="modal_card" id="signup">
+            <div class="modal-close" onclick="loginSignupClose(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+                </svg>
+            </div>
+            <h4>Sign Up</h4>
+            <!-- <p>Join a new world of knowledge</p> -->
+            <form class="col-input">
+                <input type="text" placeholder="Mobile" required>
+                <a href=""></a>
+                <button class="btn" type="submit">Submit</button>
+                <p> have an account? <a data-v-1745787d=""  onclick="changeForm('signup')" href="javascript:void(0);">Sign In</a></p>
+            </form>
+
+    </div>
+</div>
+
+
+<!-- Login & Sign Up End -->
+
+
+        <!-- *Header Section Start  -->
+
+        <header>
+            <div class="container">
+                <div class="left-side">
+                    <div class="logo">
+                        <h3 style="color: #FD3434;">CreateofBrand</h3>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                        src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                                <ul class="drop-down">
+                                    <li><a href="course.html">Creativity and Design</a></li>
+                                    <li><a href="course.html">Foreign language</a></li>
+                                    <li><a href="course.html">Sales and Marketing</a></li>
+                                    <li><a href="course.html">Business</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="subscription.html">Subscription</a></li>
+                            <li><a href="javascript:void(0);" class="login-signup" onclick="loginSignup()">Login / Signup</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bar"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bar">
+                    </form>
+                    <div class="menu" id="menu">
+                        <img src="assets/icons/menu.png" alt="" style="width: 35px;height: 35px;">
+                    </div>
+                    <img src="assets/icons/x-icons.png" alt="" style='display:none;margin-right: 5px;'
+                        style="width: 35px;height: 35px;" id="menu-x">
+                </div>
+
+
+            </div>
+            <div class="responsive-menu">
+                <div style="width: 80%;background-color: white;height: 100%;">
+                    <ul>
+                        <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                    src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                            <ul class="drop-down" style="max-width:216px">
+                                <li style="width: 250px;"><a href="course.html">Creativity and Design</a></li>
+                                <li style="width: 250px;"><a href="course.html">Foreign language</a></li>
+                                <li style="width: 250px;"><a href="course.html">Sales and Marketing</a></li>
+                                <li style="width: 250px;"><a href="course.html">Business</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bars"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bars" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- *Header Section End  -->
+
+
+        <!-- Hero Section Start  -->
+
+        <section class="hero">
+            <div class="banner" style="background: url('assets/image/banner-hero.png');">
+                <div class="container">
+                    <h1>Learn on your Own, Build confidence!</h1>
+                    <p>Bahubrihi manufacturer track posts are enough for freelancing yourself.</p>
+                    <a href="#" class="btn">View Courses</a>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+        <!-- All Course  Section Start-->
+        <section class="all-courses">
+            <div class="container">
+                <h2>All Courses <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+                        fill="none">
+                        <path
+                            d="M28.5 24.4998H8.5C8.14638 24.4998 7.80724 24.6403 7.55719 24.8904C7.30714 25.1404 7.16667 25.4795 7.16667 25.8332C7.16667 26.1868 7.30714 26.5259 7.55719 26.776C7.80724 27.026 8.14638 27.1665 8.5 27.1665H28.5V29.8332H8.5C7.43913 29.8332 6.42172 29.4117 5.67157 28.6616C4.92143 27.9115 4.5 26.894 4.5 25.8332V5.83317C4.5 5.12593 4.78095 4.44765 5.28105 3.94755C5.78115 3.44746 6.45942 3.1665 7.16667 3.1665H28.5V24.4998ZM7.16667 21.8998C7.38267 21.8558 7.60533 21.8332 7.83333 21.8332H25.8333V5.83317H7.16667V21.8998ZM21.8333 12.4998H11.1667V9.83317H21.8333V12.4998Z"
+                            fill="#81B234" />
+                    </svg></h2>
+                <div style="position: relative;" class="">
+                    <div class="courses_header">
+                        <div style="width: 20px;"></div>
+                        <button class="active"><img
+                                src="https://cdn.ostad.app/public/upload/2023-06-22T06-40-41.054Z-code-box-line.png"
+                                alt=""> Web & App Development </button>
+                        <button><img
+                                src="https://cdn.ostad.app/public/upload/2023-06-07T09-54-47.357Z-business-and-marketing.png"
+                                alt=""> Business &amp; Marketing </button>
+                        <button><img src="https://cdn.ostad.app/public/upload/2023-06-07T09-55-16.264Z-data-eng.png"
+                                alt="">Data Engineering </button>
+                        <button><img
+                                src="https://cdn.ostad.app/public/upload/2023-06-07T09-55-56.635Z-higher-studies.png"" alt=""> IELTS Preparation</button>  
+                      <button><img src=" https://cdn.ostad.app/public/upload/2023-06-22T06-37-51.269Z-Cyber
+                                Security.png" alt="">Cyber Security</button>
+
+                        <div class="previous" title="Previous" onclick="courses_header_scroll('previous')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M10.828 12L15.778 16.95L14.364 18.364L8 12L14.364 5.63599L15.778 7.04999L10.828 12Z"
+                                    fill="#050400" />
+                            </svg>
+                        </div>
+                        <div class="next" id="" onclick="courses_header_scroll('next')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
+                                    fill="#050400" />
+                            </svg>
+                        </div>
+                        <div style="width: 23px;"></div>
+                    </div>
+                </div>
+                <div class="course_card_row">
+
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb01.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>312 Seats Left</span>
+                            <span>Batch 4</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>28 Days Left</span>
+                        </div>
+                        <h3>Learning JavaScript With ImaginationLearning....</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb02.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>12 Seats Left</span>
+                            <span>Batch 2</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>28 Days Left</span>
+                        </div>
+                        <h3>The Complete Graphic Design for Beginners</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb03.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>252 Seats Left</span>
+                            <span>Batch 4</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>22 Days Left</span>
+                        </div>
+                        <h3>Learning Digital Marketing on Facebook</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb04.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>112 Seats Left</span>
+                            <span>Batch 2</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>6 Days Left</span>
+                        </div>
+                        <h3>Financial Analyst Training & Investing Course</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb05.jpg"
+                                alt="">
+                        </div>
+                        <div class="mid">
+                            <span>12 Seats Left</span>
+                            <span>Batch 1</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>1 Days Left</span>
+                        </div>
+                        <h3>Data Analysis & Visualization Masterclass</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb06.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>36 Seats Left</span>
+                            <span>Batch 6</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>28 Days Left</span>
+                        </div>
+                        <h3>Master the Fundamentals of Math</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb01.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>312 Seats Left</span>
+                            <span>Batch 4</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>28 Days Left</span>
+                        </div>
+                        <h3>Learning JavaScript With ImaginationLearning....</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="img">
+                            <img src="https://themegenix.com/demo/skillgro/assets/img/courses/course_thumb02.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                            <span>12 Seats Left</span>
+                            <span>Batch 2</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H17V14H11V7H13V12Z"
+                                        fill="#050400" />
+                                </svg>28 Days Left</span>
+                        </div>
+                        <h3>The Complete Graphic Design for Beginners</h3>
+                        <div class="bottom">
+                            <span type="button" class="btn-small">See Details</span>
+                        </div>
+                    </a>
+
+
+
+                </div>
+                <div class="all_course_button ">
+                    <a href="course.html" class="btn">See All<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
+                                fill="#050400" />
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+        <!-- All Course  Section End-->
+
+        <!-- PracticalProject Project Start -->
+
+        <section class="practical_project" style=" background-image: url('assets/image/2023-09-26T09-37-51.690Z-cat-doodles.webp')">
+            <div class="container">
+                <div class="text">
+                    <h2>Real life project Learn to Work Through Market Standards</h2>
+                    <p>From very basic to advanced level you will learn step by step in our career tracks. For this, do
+                        real life projects, which will give you the confidence to work in the job and freelancing
+                        market.</p>
+                </div>
+                <div class="image">
+                    <img src="https://bohubrihi.com/_next/static/media/practical-project.ead19e3b.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- PracticalProject Project End -->
+
+        <!-- all Data Show Section Start -->
+
+        <section class="all-data-show">
+            <div class="container">
+                <div class="card">
+                    <h3 style="color:#59A0A2">369,086</h3>
+                    <p>Total Enrollment</p>
+                </div>
+                 <div class="card">
+                    <h3 style="color:#D39026">269,936</h3>
+                    <p>Number of students</p>
+                </div>
+                <div class="card">
+                    <h3 style="color:#B263C4">11,332</h3>
+                    <p>Total video</p>
+                </div>
+                <div class="card">
+                    <h3 style="color:#D65956">55</h3>
+                    <p>Courses and career tracks</p>
+                </div>
+            </div>
+        </section>        
+
+        <!-- all Data Show Section End -->
+
+        <!-- *Fotter Section Start  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Related to Polygamy</h3>
+                        <p>Bahubrihi is the best skill development solution in the country for students, professionals
+                            and
+                            freelancers of any age. Career track programs and foundation courses designed by industry
+                            experts at Bahubrihi will ensure your successful career at home and abroad.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Quick link</h3>
+                        <ul>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Login Signup</a></li>
+                            <li><a href="#">Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">01980-533510</a></li>
+                            <li><a href="#">createbrand.team@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Fotter Section End -->
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

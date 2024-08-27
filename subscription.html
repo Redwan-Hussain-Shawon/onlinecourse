@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsvie.css">
+</head>
+
+<body>
+    <div class="website-wrapper">
+
+<!-- Login & Sign Up Start  -->
+
+<div class="login_signUp_modal modal ">
+    <div class="modal_card" id="login">
+        <div class="modal-close" onclick="loginSignupClose(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+            </svg>
+        </div>
+        <h4>Sign in</h4>
+        <!-- <p>Join a new world of knowledge</p> -->
+        <form class="col-input">
+            <input type="text" placeholder="Mobile" required>
+            <input type="text" placeholder="Password" required>
+            <a href=""></a>
+            <button class="btn" type="submit">Submit</button>
+            <p>Don't have an account? <a data-v-1745787d="" onclick="changeForm('login')" href="javascript:void(0);">Sign up</a></p>
+        </form>
+    </div>
+    <div class="modal_card" id="signup">
+            <div class="modal-close" onclick="loginSignupClose(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+                </svg>
+            </div>
+            <h4>Sign Up</h4>
+            <!-- <p>Join a new world of knowledge</p> -->
+            <form class="col-input">
+                <input type="text" placeholder="Mobile" required>
+                <a href=""></a>
+                <button class="btn" type="submit">Submit</button>
+                <p> have an account? <a data-v-1745787d=""  onclick="changeForm('signup')" href="javascript:void(0);">Sign In</a></p>
+            </form>
+
+    </div>
+</div>
+
+
+<!-- Login & Sign Up End -->
+
+
+        <!-- *Header Section Start  -->
+
+        <header>
+            <div class="container">
+                <div class="left-side">
+                    <div class="logo">
+                        <h3 style="color: #FD3434;">CreateofBrand</h3>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                        src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                                <ul class="drop-down">
+                                    <li><a href="course.html">Creativity and Design</a></li>
+                                    <li><a href="course.html">Foreign language</a></li>
+                                    <li><a href="course.html">Sales and Marketing</a></li>
+                                    <li><a href="course.html">Business</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="subscription.html">Subscription</a></li>
+                            <li><a href="javascript:void(0);" class="login-signup" onclick="loginSignup()">Login / Signup</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bar"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bar">
+                    </form>
+                    <div class="menu" id="menu">
+                        <img src="assets/icons/menu.png" alt="" style="width: 35px;height: 35px;">
+                    </div>
+                    <img src="assets/icons/x-icons.png" alt="" style='display:none;margin-right: 5px;'
+                        style="width: 35px;height: 35px;" id="menu-x">
+                </div>
+
+
+            </div>
+            <div class="responsive-menu">
+                <div style="width: 80%;background-color: white;height: 100%;">
+                    <ul>
+                        <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                    src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                            <ul class="drop-down" style="max-width:216px">
+                                <li style="width: 250px;"><a href="course.html">Creativity and Design</a></li>
+                                <li style="width: 250px;"><a href="course.html">Foreign language</a></li>
+                                <li style="width: 250px;"><a href="course.html">Sales and Marketing</a></li>
+                                <li style="width: 250px;"><a href="course.html">Business</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bars"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bars" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- *Header Section End  -->
+
+
+        <!-- PracticalProject Project Start -->
+
+        <section class="practical_project"
+            style=" background-image: url('assets/image/2023-09-26T09-37-51.690Z-cat-doodles.webp')">
+            <div class="container">
+                <div class="text">
+                    <h2>Constantly upgrade your learning</h2>
+                    <p>You can learn on-demand topics, from any course and career track, at your own convenience.</p>
+                </div>
+                <div class="image">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-essay-illustration_23-2150290952.jpg?t=st=1708844866~exp=1708848466~hmac=52b0279cfcfda9107255c74b7a2267bea17b345fbe0f49cd7fb9800dc9b6c5cf&w=826"
+                        alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- PracticalProject Project End -->
+
+
+
+             <!-- Our subscriptions  Section Start  -->
+
+             <div class="our-subscriptions">
+                <div class="container">
+                <h2>Our Subscriptions</h2>
+    
+                <div class="row">
+                    <div class="card">
+                        <h4>Basic</h4>
+                        <div>
+                            <h3>12$</h3>
+                            <p>6 Months Duration</p>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-50">Subscription</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg> Access to all current courses and content
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg>নতুন সব কোর্স ও কন্টেন্টের অ্যাক্সেস
+    
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="popular_shape">
+                            <span>Popular</span>
+                        </div>
+    
+    
+                        <h4>Standard                    </h4>
+                        <div>
+                            <h3>12$</h3>
+                            <p>6 Months Duration</p>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-50">Subscription</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg> Access to all current courses and content
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg>নতুন সব কোর্স ও কন্টেন্টের অ্যাক্সেস
+    
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Pro</h4>
+                        <div>
+                            <h3>12$</h3>
+                            <p>6 Months Duration</p>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-50">Subscription</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg> Access to all current courses and content
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg>নতুন সব কোর্স ও কন্টেন্টের অ্যাক্সেস
+    
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1665 0.046875C8.23814 0.046875 6.35308 0.618703 4.7497 1.69005C3.14632 2.76139 1.89664 4.28413 1.15868 6.06571C0.420728 7.84729 0.227646 9.80769 0.603852 11.699C0.980058 13.5903 1.90866 15.3276 3.27222 16.6912C4.63578 18.0547 6.37306 18.9833 8.26438 19.3595C10.1557 19.7357 12.1161 19.5427 13.8977 18.8047C15.6793 18.0667 17.202 16.8171 18.2733 15.2137C19.3447 13.6103 19.9165 11.7252 19.9165 9.79688C19.9138 7.21185 18.8857 4.73349 17.0578 2.9056C15.2299 1.07771 12.7515 0.0496048 10.1665 0.046875ZM14.4471 8.0775L9.19713 13.3275C9.12748 13.3972 9.04476 13.4526 8.95371 13.4903C8.86267 13.528 8.76507 13.5475 8.66651 13.5475C8.56795 13.5475 8.47035 13.528 8.3793 13.4903C8.28825 13.4526 8.20554 13.3972 8.13588 13.3275L5.88588 11.0775C5.74515 10.9368 5.66609 10.7459 5.66609 10.5469C5.66609 10.3479 5.74515 10.157 5.88588 10.0162C6.02661 9.87552 6.21749 9.79646 6.41651 9.79646C6.61553 9.79646 6.8064 9.87552 6.94713 10.0162L8.66651 11.7366L13.3859 7.01625C13.4556 6.94657 13.5383 6.89129 13.6293 6.85358C13.7204 6.81587 13.818 6.79646 13.9165 6.79646C14.0151 6.79646 14.1126 6.81587 14.2037 6.85358C14.2947 6.89129 14.3775 6.94657 14.4471 7.01625C14.5168 7.08593 14.5721 7.16866 14.6098 7.2597C14.6475 7.35075 14.6669 7.44833 14.6669 7.54688C14.6669 7.64542 14.6475 7.743 14.6098 7.83405C14.5721 7.92509 14.5168 8.00782 14.4471 8.0775Z"
+                                        fill="#81B234"></path>
+                                </svg>নতুন সব কোর্স ও কন্টেন্টের অ্যাক্সেস
+    
+                            </li>
+                            
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+            <!-- Our subscriptions  Section End -->
+            
+
+        <!-- PracticalProject Project Start -->
+
+        <section class="practical_project"
+            style=" background-image: url('assets/image/2023-09-26T09-37-51.690Z-cat-doodles.webp')">
+            <div class="container">
+                <div class="image">
+                    <img src="https://bohubrihi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbohubrihi%2Fimage%2Fupload%2Fv1697445882%2FBohubrihi%2520Website%2Fsubscription-plan%2FBB_Subscription-plan-grid-3_ugqjgx.png&w=640&q=75"
+                        alt="">
+                </div>
+                <div class="text">
+                    <h2>Check and select the carrier</h2>
+                    <p>There is often a lack of useful information and guidance to make an informed career decision. So
+                        when you want to look for the topic, you can quickly find the place of your choice.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PracticalProject Project End -->
+
+   
+
+
+
+        <!-- *Fotter Section Start  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Related to Polygamy</h3>
+                        <p>Bahubrihi is the best skill development solution in the country for students, professionals
+                            and
+                            freelancers of any age. Career track programs and foundation courses designed by industry
+                            experts at Bahubrihi will ensure your successful career at home and abroad.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Quick link</h3>
+                        <ul>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Login Signup</a></li>
+                            <li><a href="#">Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">01980-533510</a></li>
+                            <li><a href="#">createbrand.team@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Fotter Section End -->
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

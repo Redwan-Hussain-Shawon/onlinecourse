@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsvie.css">
+</head>
+
+<body>
+    <div class="website-wrapper">
+
+<!-- Login & Sign Up Start  -->
+
+<div class="login_signUp_modal modal ">
+    <div class="modal_card" id="login">
+        <div class="modal-close" onclick="loginSignupClose(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+            </svg>
+        </div>
+        <h4>Sign in</h4>
+        <!-- <p>Join a new world of knowledge</p> -->
+        <form class="col-input">
+            <input type="text" placeholder="Mobile" required>
+            <input type="text" placeholder="Password" required>
+            <a href=""></a>
+            <button class="btn" type="submit">Submit</button>
+            <p>Don't have an account? <a data-v-1745787d="" onclick="changeForm('login')" href="javascript:void(0);">Sign up</a></p>
+        </form>
+    </div>
+    <div class="modal_card" id="signup">
+            <div class="modal-close" onclick="loginSignupClose(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z" fill="#050400"/>
+                </svg>
+            </div>
+            <h4>Sign Up</h4>
+            <!-- <p>Join a new world of knowledge</p> -->
+            <form class="col-input">
+                <input type="text" placeholder="Mobile" required>
+                <a href=""></a>
+                <button class="btn" type="submit">Submit</button>
+                <p> have an account? <a data-v-1745787d=""  onclick="changeForm('signup')" href="javascript:void(0);">Sign In</a></p>
+            </form>
+
+    </div>
+</div>
+
+
+<!-- Login & Sign Up End -->
+
+
+        <!-- *Header Section Start  -->
+
+        <header>
+            <div class="container">
+                <div class="left-side">
+                    <div class="logo">
+                        <h3 style="color: #FD3434;">CreateofBrand</h3>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                        src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                                <ul class="drop-down">
+                                    <li><a href="course.html">Creativity and Design</a></li>
+                                    <li><a href="course.html">Foreign language</a></li>
+                                    <li><a href="course.html">Sales and Marketing</a></li>
+                                    <li><a href="course.html">Business</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="subscription.html">Subscription</a></li>
+                            <li><a href="javascript:void(0);" class="login-signup" onclick="loginSignup()">Login / Signup</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bar"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bar">
+                    </form>
+                    <div class="menu" id="menu">
+                        <img src="assets/icons/menu.png" alt="" style="width: 35px;height: 35px;">
+                    </div>
+                    <img src="assets/icons/x-icons.png" alt="" style='display:none;margin-right: 5px;'
+                        style="width: 35px;height: 35px;" id="menu-x">
+                </div>
+
+
+            </div>
+            <div class="responsive-menu">
+                <div style="width: 80%;background-color: white;height: 100%;">
+                    <ul>
+                        <li class="course-active"><a href="javascript:void(0)" class="course-active">Courses <img
+                                    src="assets/icons/down-arrow.png" style="width: 13px;" alt=""></a>
+                            <ul class="drop-down" style="max-width:216px">
+                                <li style="width: 250px;"><a href="course.html">Creativity and Design</a></li>
+                                <li style="width: 250px;"><a href="course.html">Foreign language</a></li>
+                                <li style="width: 250px;"><a href="course.html">Sales and Marketing</a></li>
+                                <li style="width: 250px;"><a href="course.html">Business</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                    <form action="" class="search">
+                        <input type="text" placeholder="Find Courses" required>
+                        <label for="search-bars"><img src="assets/icons/search-iocns.png" alt=""></label>
+                        <input type="submit" id="search-bars" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- *Header Section End  -->
+
+
+        <!-- Top Highlighter Start  -->
+        <div class="top_highlighter">
+            <h1>Our Most Popular Blog</h1>
+            <p>Dive into our most popular blog for captivating insights and engaging narratives that spark curiosity and inspire action.</p>
+        </div>
+        <!-- Top Highlighter End  -->
+        <div class="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <div class="img">
+                            <a href="#"><img src="https://cdn.ghoorilearning.com/uploads/images/20231031123229-65409f7d6fcc5.jpeg" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h5>Administrator <span>3 months ago</span></h5>
+                                <h3><a href="#">Benefits of Referral/Affiliate Marketing</a> </h3>
+                                <p>If you have a blog, website, or YouTube channel, you can easily earn online through  <a href="#">Read More...</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <a href="#"><img src="https://cdn.ghoorilearning.com/uploads/images/20231031115812-65409774351ff.jpeg" alt=""></a>
+                        </div>
+                        <div class="text">
+                                <h5>Administrator <span>3 months ago</span></h5>
+                                <h3><a href="#">How do you earn by Referral/Affiliate Marketing from Ghoori Learning</a> </h3>
+                                <p>If you have a blog, website, or YouTube channel, you can easily earn online through  <a href="#">Read More...</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <a href="#"><img src="https://cdn.ghoorilearning.com/uploads/images/20231031114744-6540950020ab3.jpeg" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h5>Administrator <span>1 months ago</span></h5>
+                                <h3><a href="#">অ্যাফিলিয়েট মার্কেটিংয়ের সুবিধাসমূহ </a> </h3>
+                                <p>If you have a blog, website, or YouTube channel, you can easily earn online through  <a href="#">Read More...</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <a href="#"><img src="https://cdn.ghoorilearning.com/uploads/images/20231030150638-653f721ef04c6.jpeg" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h5>Administrator <span>3 months ago</span></h5>
+                                <h3><a href="#">Common nutritional problem in Bangladesh</a> </h3>
+                                <p>If you have a blog, website, or YouTube channel, you can easily earn online through  <a href="#">Read More...</a></p>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <div class="img">
+                            <a href="#"><img src="https://cdn.ghoorilearning.com/uploads/images/20231030155224-653f7cd857635.jpeg" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h5>Administrator <span>3 months ago</span></h5>
+                                <h3><a href="#">Top 10 Cricket Academy in Bangladesh</a> </h3>
+                                <p>If you have a blog, website, or YouTube channel, you can easily earn online through  <a href="#">Read More...</a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- *Fotter Section Start  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Related to Polygamy</h3>
+                        <p>Bahubrihi is the best skill development solution in the country for students, professionals
+                            and
+                            freelancers of any age. Career track programs and foundation courses designed by industry
+                            experts at Bahubrihi will ensure your successful career at home and abroad.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Quick link</h3>
+                        <ul>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Login Signup</a></li>
+                            <li><a href="#">Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">01980-533510</a></li>
+                            <li><a href="#">createbrand.team@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Fotter Section End -->
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
